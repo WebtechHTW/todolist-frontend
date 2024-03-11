@@ -1,0 +1,13 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+
+@Component({
+  selector: 'app-footer',
+  standalone: true,
+  imports: [RouterLink, NgbNavModule, CommonModule],
+  templateUrl: './footer.component.html',
+  styleUrl: './footer.component.css',
+})
+export class FooterComponent {}

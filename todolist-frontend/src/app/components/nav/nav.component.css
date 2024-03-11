@@ -1,0 +1,8 @@
+.show-on-hover {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown:hover .show-on-hover {
+  opacity: 1;
+}
