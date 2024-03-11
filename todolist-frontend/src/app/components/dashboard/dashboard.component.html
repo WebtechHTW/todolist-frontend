@@ -1,1 +1,53 @@
-<p>dashboard works!</p>
+<div class="container-fluid">
+  <div class="title">
+    <h1><b>To-do-Listen</b></h1>
+  </div>
+  <div class="row pt-5">
+    <div class="col-10 mx-auto">
+      <div class="row row-cols-2 mx-auto">
+        <button class="button col-10" type="submit" routerLink="/tasks/add">
+          Neues To-dos
+        </button>
+        <button class="button col-2" (click)="removeAllTask()">Löschens</button>
+      </div>
+      <div class="card-content mx-auto pt-3">
+        <div class="row row-cols-2">
+          <div class="card">
+            <h3>
+              <b>My To-dos</b>
+            </h3>
+            <span>{{ getTasksNum() }}</span>
+          </div>
+          <div class="card">
+            <h3>
+              <b>Completed</b>
+            </h3>
+            <span>{{ getTasksCompletedNum() }}</span>
+          </div>
+        </div>
+        <div class="d-grid gap-3 pt-3">
+          <div *ngFor="let task of tasks" class="list-group-item">
+            <div class="row row-cols-2 p-2 mx-auto">
+              <input
+                type="checkbox"
+                class="col-1 me-2"
+                [checked]="task.isCompleted"
+                (change)="toggleTaskCompletion(task)"
+              />
+              <a [routerLink]="['/tasks/update', task._id]" class="col-7">
+                <h4>
+                  <b>{{ task.title }}</b>
+                </h4>
+              </a>
+              <div class="col-3 justify-content-end">
+                <button (click)="removeTask(task._id)" class="button">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

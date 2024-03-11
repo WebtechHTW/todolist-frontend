@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../shared/services/auth.service';
 import { FormsModule } from '@angular/forms';
@@ -19,7 +19,9 @@ export class LoginComponent {
       .subscribe({
         next: (response) => {
           console.log(response);
-          this.router.navigate([`/${this.loginForm.username}/tasks`]);
+          localStorage.setItem('token', response.token);
+          localStorage.setItem('username', response.username);
+          this.router.navigate([`/tasks`]);
         },
         error: (err) => console.log(err),
         complete: () => console.log('login completed'),
