@@ -5,6 +5,7 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { authGuard } from './shared/guard/auth.guard';
 import { UpdateTaskComponent } from './components/update-task/update-task.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -20,4 +21,5 @@ export const routes: Routes = [
     component: UpdateTaskComponent,
     canActivate: [authGuard],
   },
+  { path: '', component: HomepageComponent },
 ];

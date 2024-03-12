@@ -1,3 +1,13 @@
+body {
+  background-color: #fff;
+  font-family: "Karla", sans-serif;
+}
+
+h1 > a {
+  text-decoration: none;
+  color: #fff !important;
+}
+
 .intro-section {
   background-image: url(https://i.ibb.co/t2tbbh6/pexels-luis-quintero-2471234.jpg);
   background-size: cover;
@@ -154,20 +164,6 @@
   border: 1px solid #000;
   background-color: transparent;
   color: #000;
-}
-
-.forgot-password-link {
-  font-size: 14px;
-  color: #080808;
-  text-decoration: underline;
-}
-
-.social-login-title {
-  font-size: 15px;
-  color: #919aa3;
-  display: -webkit-box;
-  display: flex;
-  margin-bottom: 23px;
 }
 
 .login-wrapper-footer-text {
