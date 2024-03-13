@@ -1,7 +1,4 @@
 <div class="container-fluid">
-  <div class="title">
-    <h1><b>To-do-Listen</b></h1>
-  </div>
   <div class="row pt-5">
     <div class="col-10 mx-auto">
       <div class="row row-cols-2 mx-auto">
@@ -27,12 +24,15 @@
         </div>
         <div class="d-grid gap-3 pt-3">
           <div *ngFor="let task of tasks" class="list-group-item">
-            <div class="row row-cols-2 p-2 mx-auto">
+            <div
+              class="row row-cols-2 p-2 mx-auto"
+              [class.text-decoration-line-through]="task.isCompleted"
+            >
               <input
+                [(ngModel)]="task.isCompleted"
                 type="checkbox"
                 class="col-1 me-2"
-                [checked]="task.isCompleted"
-                (change)="toggleTaskCompletion(task)"
+                (change)="updateTask(task)"
               />
               <a [routerLink]="['/tasks/update', task._id]" class="col-7">
                 <h4>

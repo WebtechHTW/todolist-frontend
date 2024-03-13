@@ -1,10 +1,10 @@
 .intro-section {
-  background-image: url(https://i.ibb.co/t2tbbh6/pexels-luis-quintero-2471234.jpg);
+  background-image: url(/assets/bg1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 75px 95px;
-  min-height: 100vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -154,23 +154,4 @@
   border: 1px solid #000;
   background-color: transparent;
   color: #000;
-}
-
-.forgot-password-link {
-  font-size: 14px;
-  color: #080808;
-  text-decoration: underline;
-}
-
-.social-login-title {
-  font-size: 15px;
-  color: #919aa3;
-  display: -webkit-box;
-  display: flex;
-  margin-bottom: 23px;
-}
-
-.login-wrapper-footer-text {
-  font-size: 14px;
-  text-align: center;
 }

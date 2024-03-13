@@ -1,8 +1,22 @@
-.show-on-hover {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+.navbar-brand {
+  letter-spacing: 3px;
+  color: #c24244;
 }
 
-.dropdown:hover .show-on-hover {
-  opacity: 1;
+.navbar-brand:hover {
+  color: #c24244;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+  color: #7f4722;
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+  color: #7f4722;
+}
+
+.navbar-scrolled {
+  background-color: #ffede7;
 }

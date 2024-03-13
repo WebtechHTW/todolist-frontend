@@ -64,20 +64,24 @@ export class UpdateTaskComponent implements OnInit {
 
   updateTask(task: Task) {
     // Validate the task object before sending for addition
-    if (this.task.title.trim() === '' || this.task.dueDate === null) {
-      console.error('Task title and due date are required.');
-      return;
+    if (task.title.trim() !== '') {
+      this.taskService
+        .updateTaskByID(task, this.taskService.getUsername(), task._id)
+        .subscribe({
+          next: (updatedTask) => {
+            this.router.navigate(['/tasks']);
+            console.log('update success:', updatedTask);
+          },
+          error: (err) => {
+            console.error('error  updating task: ', err);
+          },
+        });
+    } else {
+      alert("title can't not be blank!");
     }
-    this.taskService
-      .updateTaskByID(this.task, this.taskService.getUsername(), task._id)
-      .subscribe({
-        next: (updatedTask) => {
-          this.router.navigate(['/tasks']);
-          console.log('update success:', updatedTask);
-        },
-        error: (err) => {
-          console.error('error  updating task: ', err);
-        },
-      });
+  }
+
+  cancel() {
+    this.router.navigate(['/tasks']);
   }
 }

@@ -3,11 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { Task } from '../../shared/models/task';
 import { TaskService } from '../../shared/services/task.service';
 import { Router, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, FormsModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
 })
@@ -60,7 +61,6 @@ export class DashboardComponent implements OnInit {
   removeAllTask() {
     this.taskService.deleteAllTasks(this.taskService.getUsername()).subscribe({
       next: (response: any) => {
-        alert('Delete all tasks successfully!');
         this.readAll();
       },
       error: (error: any) => {
@@ -90,18 +90,5 @@ export class DashboardComponent implements OnInit {
           console.error('error  updating task', err);
         },
       });
-  }
-
-  toggleTaskCompletion(task: Task) {
-    console.log(task);
-    this.updateTask(task);
-    // Überprüfe, ob die Aufgabe bereits abgeschlossen ist
-    if (task.isCompleted) {
-      // Wenn die Aufgabe abgeschlossen ist, durchstreiche den Titel
-      task.title = '<s>' + task.title + '</s>';
-    } else {
-      // Wenn die Aufgabe nicht abgeschlossen ist, entferne das Durchstreichen
-      task.title = task.title.replace('<s>', '').replace('</s>', '');
-    }
   }
 }

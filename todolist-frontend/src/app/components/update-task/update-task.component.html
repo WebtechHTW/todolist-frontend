@@ -1,5 +1,5 @@
-<div class="container">
-  <h1>To-Do List</h1>
+<div class="row pt-3">
+  <h1 class="col col-md-12">Neuen Todo</h1>
   <div class="card mb-3">
     <div class="card-body">
       <div class="row">
@@ -12,43 +12,51 @@
             placeholder="Enter Title"
           />
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <input
-              [ngModel]="task.dueDate | date : 'yyyy-MM-dd'"
-              type="date"
-              class="form-control"
-              id="due-date"
-            />
-          </div>
+        <div class="col-md-4">
+          <input
+            [ngModel]="task.dueDate | date : 'yyyy-MM-dd'"
+            type="date"
+            class="form-control"
+            id="due-date"
+          />
         </div>
-        <textarea
-          [(ngModel)]="task.description"
-          class="form-control mt-3"
-          id="description"
-          rows="3"
-          placeholder="Enter Description (optional)"
-        ></textarea>
-        <div class="d-flex justify-content-between mt-3">
-          <div class="form-check">
-            <input
-              [(ngModel)]="task.isCompleted"
-              type="checkbox"
-              class="form-check-input"
-              id="complete"
-            />
-            <label class="form-check-label" for="complete">Complete</label>
-          </div>
-          <button
-            (click)="updateTask(task)"
-            type="button"
-            class="btn btn-primary"
-            id="update-button"
-          >
-            Update
-          </button>
+      </div>
+      <textarea
+        [(ngModel)]="task.description"
+        class="form-control mt-3"
+        id="description"
+        rows="3"
+        placeholder="Enter Description (optional)"
+      ></textarea>
+      <div class="d-flex justify-content-between mt-3">
+        <div class="form-check">
+          <input
+            [(ngModel)]="task.isCompleted"
+            type="checkbox"
+            class="form-check-input"
+            id="complete"
+          />
+          <label class="form-check-label" for="complete">Complete</label>
         </div>
       </div>
     </div>
+  </div>
+  <div class="row row-cols-2">
+    <button
+      (click)="updateTask(task)"
+      type="button"
+      class="button col-md-6"
+      id="add-card"
+    >
+      Update
+    </button>
+    <button
+      (click)="cancel()"
+      type="button"
+      class="button col-md-6"
+      id="add-card"
+    >
+      Zurück
+    </button>
   </div>
 </div>

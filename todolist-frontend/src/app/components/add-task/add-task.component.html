@@ -1,5 +1,5 @@
-<!-- <div class="container">
-  <h1>To-Do List</h1>
+<div class="row pt-3">
+  <h1 class="col col-md-12">Neuen Todo</h1>
   <div class="card mb-3">
     <div class="card-body">
       <div class="row">
@@ -41,30 +41,22 @@
       </div>
     </div>
   </div>
-  <button
-    (click)="addTask(task)"
-    type="button"
-    class="btn btn-primary"
-    id="add-card"
-  >
-    Add Card
-  </button>
-</div> -->
-<div class="container py-3">
-  <h1 class="display-4 text-center">To Do List</h1>
-
-  <form id="add-task-form" class="mb-3">
-    <div class="input-group">
-      <input
-        type="text"
-        class="form-control"
-        id="task-name"
-        name="task-name"
-        placeholder="Enter your task"
-      />
-      <button type="submit" class="btn btn-primary">Add Task</button>
-    </div>
-  </form>
-
-  <ul class="list-group task-list" id="task-list"></ul>
+  <div class="row row-cols-2">
+    <button
+      (click)="addTask(task)"
+      type="button"
+      class="button col-md-6"
+      id="add-card"
+    >
+      Add
+    </button>
+    <button
+      (click)="cancel()"
+      type="button"
+      class="button col-md-6"
+      id="add-card"
+    >
+      Zurück
+    </button>
+  </div>
 </div>

@@ -25,24 +25,26 @@ export class AddTaskComponent {
 
   addTask(task: Task) {
     // Validate the task object before sending for addition
-    if (task.title.trim() === '' || task.dueDate === null) {
-      console.error('Task title and due date are required.');
-      return;
+    if (task.title.trim() !== '') {
+      this.taskService
+        .addNewTask(task, this.taskService.getUsername())
+        .subscribe({
+          next: (response) => {
+            console.log(response);
+            this.router.navigate(['/tasks']);
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => {
+            console.log('addNewTask() completed');
+          },
+        });
+    } else {
+      alert("Title can't be blank");
     }
-
-    this.taskService
-      .addNewTask(task, this.taskService.getUsername())
-      .subscribe({
-        next: (response) => {
-          console.log(response);
-          this.router.navigate(['/tasks']);
-        },
-        error: (error) => {
-          console.error(error);
-        },
-        complete: () => {
-          console.log('addNewTask() completed');
-        },
-      });
+  }
+  cancel() {
+    this.router.navigate(['/tasks']);
   }
 }

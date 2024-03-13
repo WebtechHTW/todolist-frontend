@@ -1,73 +1,9 @@
-<!-- <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <div class="card">
-        <div class="card-header">
-          <h2>Registrieren</h2>
-        </div>
-        <div class="card-body">
-          <form (ngSubmit)="registerUser()">
-            <div class="form-group">
-              <label for="username">Name</label>
-              <input
-                [(ngModel)]="registerForm.name"
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                placeholder="Vollständige Name eingeben"
-              />
-            </div>
-            <div class="form-group">
-              <label for="username">Benutzername</label>
-              <input
-                [(ngModel)]="registerForm.username"
-                type="text"
-                class="form-control"
-                id="username"
-                name="username"
-                placeholder="Benutzername eingeben"
-              />
-            </div>
-            <div class="form-group">
-              <label for="password">Passwort</label>
-              <input
-                [(ngModel)]="registerForm.password"
-                type="password"
-                class="form-control"
-                id="password"
-                name="password"
-                placeholder="Passwort eingeben"
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">E-Mail</label>
-              <input
-                [(ngModel)]="registerForm.email"
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="Email eingeben"
-              />
-            </div>
-            <button type="submit" class="btn btn-primary">Registrieren</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
 <div class="row">
   <div class="col-sm-6 col-md-7 intro-section">
     <div class="intro-content-wrapper">
       <h1 class="intro-title">Welcome to To-do-list !</h1>
-      <p class="intro-text">
-        Melden Sie sich mit Ihren Zugangsdaten an und greifen Sie auf alle
-        Funktionen zu. Haben Sie noch keinen Zugang? Registrieren Sie sich
-        jetzt!
-      </p>
-      <a href="/register" class="btn btn-read-more">Registration</a>
+      <p class="intro-text">Haben Sie schon Zugang?</p>
+      <a href="/login" class="btn btn-read-more">Login</a>
     </div>
   </div>
   <div class="col-sm-6 col-md-5 form-section">
@@ -128,9 +64,6 @@
           />
         </div>
       </form>
-      <p class="login-wrapper-footer-text">
-        Need an account? <a href="/register" class="text-reset">Signup here</a>
-      </p>
     </div>
   </div>
 </div>
