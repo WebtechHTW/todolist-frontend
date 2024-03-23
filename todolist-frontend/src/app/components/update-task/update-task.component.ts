@@ -37,17 +37,12 @@ export class UpdateTaskComponent implements OnInit {
     this.taskService.getTaskByID(this.taskService.getUsername(), id).subscribe({
       next: (res) => {
         if (res.dueDate !== null) {
+          // Ursprüngliches Datum abrufen
           const originalDate = new Date(res.dueDate);
-          // Datum in das gewünschte Format konvertieren (yyyy-MM-dd)
-          const formattedDate = originalDate.toISOString().split('T')[0];
 
-          // Das formatierte Datum zurück in den Date-Typ konvertieren
-          const dateParts = formattedDate.split('-');
-          const convertedDate = new Date(
-            Number(dateParts[0]),
-            Number(dateParts[1]) - 1,
-            Number(dateParts[2])
-          );
+          // Zeitzone des Servers berücksichtigen
+          const serverOffset = originalDate.getTimezoneOffset() * 60000; // Offset in Millisekunden
+          const convertedDate = new Date(originalDate.getTime() - serverOffset);
 
           // Setze die erhaltene Aufgabe
           this.task = { ...res, dueDate: convertedDate };
@@ -57,10 +52,11 @@ export class UpdateTaskComponent implements OnInit {
         console.log(this.task);
       },
       error: (err) => {
-        console.error('error by getTask:', err);
+        console.error('Fehler bei getTask:', err);
       },
     });
   }
+
 
   updateTask(task: Task) {
     // Validate the task object before sending for addition
@@ -83,5 +79,13 @@ export class UpdateTaskComponent implements OnInit {
 
   cancel() {
     this.router.navigate(['/tasks']);
+  }
+
+  onChange($event: Event) {
+    const newDate = ($event?.target as HTMLInputElement)?.value;
+  if (newDate) {
+    // Aktualisieren Sie das Datum im task-Objekt
+    this.task.dueDate = new Date(newDate);
+  }
   }
 }

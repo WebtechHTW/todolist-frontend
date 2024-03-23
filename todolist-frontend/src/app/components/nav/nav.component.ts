@@ -17,6 +17,9 @@ export class NavComponent {
     this.authService.logoutUser();
   }
   isLoggedIn() {
-    return this.authService.loggedIn() ? true : false;
+    return !!this.authService.loggedIn();
+  }
+  getUsername(){
+    return localStorage.getItem("username");
   }
 }
