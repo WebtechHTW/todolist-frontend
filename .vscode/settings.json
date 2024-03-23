@@ -1,3 +1,7 @@
 {
+    "cSpell.languageSettings": [
+        {}
+    ],
+    "terminal.integrated.fontFamily": "monospace",
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace"
 }
