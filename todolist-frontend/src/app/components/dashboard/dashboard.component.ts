@@ -15,8 +15,8 @@ import { FormsModule } from '@angular/forms';
 export class DashboardComponent implements OnInit {
   getTasksCompletedNum() {
     let num = 0;
-    for (let index = 0; index < this.tasks.length; index++) {
-      if (this.tasks[index].isCompleted) {
+    for (const element of this.tasks) {
+      if (element.isCompleted) {
         num++;
       }
     }
