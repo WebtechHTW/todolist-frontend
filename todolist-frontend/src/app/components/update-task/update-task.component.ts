@@ -49,7 +49,6 @@ export class UpdateTaskComponent implements OnInit {
         } else {
           this.task = res;
         }
-        console.log(this.task);
       },
       error: (err) => {
         console.error('Fehler bei getTask:', err);
