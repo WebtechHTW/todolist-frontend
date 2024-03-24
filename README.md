@@ -14,6 +14,9 @@ Dies ist eine einfache To-Do-Liste, die Ihnen dabei hilft, Ihre Aufgaben zu orga
   - [Technologien](#technologien)
   - [Installation](#installation)
 
+## Homepage
+![homepage](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/homepage.png)
+
 ## Login und Registrieren
 
 Um die To-Do-Liste zu verwenden, müssen Sie sich zunächst anmelden oder registrieren.
@@ -103,3 +106,4 @@ Dieses Projekt verwendet Node.js und Angular für die Implementierung.
   ng serve
   ```
 + Öffnen Sie Ihren Browser und besuchen Sie [http://localhost:4200](http://localhost:4200), um die To-Do-Liste anzuzeigen.
+![frontend_terminal](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/frontend_terminal.png)
