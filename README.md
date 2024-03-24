@@ -62,7 +62,7 @@ Dieses Projekt verwendet Node.js und Angular für die Implementierung.
   ```
   npm start
   ```
-+ Wenn Backend erfolgreich gestartet ist, wird es wie untere Bilder angezeigt. ![Bildbeschreibung](Pfad/zum/Bild.jpg) 
++ Wenn Backend erfolgreich gestartet ist, wird es wie untere Bilder angezeigt. ![Bildbeschreibung]([Pfad/zum/Bild.jpg](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/Bildschirmfoto%202024-03-24%20um%2001.32.56.png)) 
 4. Frontend installieren
 + Klonen Sie das  Frontend Repository
    ```
