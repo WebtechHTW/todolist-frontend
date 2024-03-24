@@ -22,8 +22,8 @@ Dies ist eine einfache To-Do-Liste, die Ihnen dabei hilft, Ihre Aufgaben zu orga
 Um die To-Do-Liste zu verwenden, müssen Sie sich zunächst anmelden oder registrieren.
 
 1. Login
-   + Wenn Sie schon einen Account haben, können Sie sich mit Ihren Anmeldeinformationen anmelden(siehe Bilder): ![Anmeldung]()
-   + Wenn es erfolgreich ist werden Sie zum  Dashboard weitergeleitet.![dashboard]()
+   + Wenn Sie schon einen Account haben, können Sie sich mit Ihren Anmeldeinformationen anmelden(siehe Bilder): ![Anmeldung](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/login.png)
+   + Wenn es erfolgreich ist werden Sie zum  Dashboard weitergeleitet.![dashboard](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/dashboard.png)
    + Falls der Benutzername oder das Passwort falsch sind, wird dies angezeigt.![FehlerAnmeldung]()
 2. Registrieren
    +  Geben Sie einen Namen, einen Benutzernamen und ein Passwort ein.
@@ -34,7 +34,7 @@ Um die To-Do-Liste zu verwenden, müssen Sie sich zunächst anmelden oder regist
 ## Neue To-Do anlegen
 Nachdem Sie sich angemeldet haben, können Sie eine neue To-Do-Liste erstellen, in der Sie Ihre Aufgaben verwalten können.
 
- 1. Auf `Dashboard` Seite finden Sie den Button ![neu todo anlegen](), wenn Sie auf Button drücken, leitet es sich Ihnen zu `Neu Todo` Seite weitergeleitet.
+ 1. Auf `Dashboard` Seite finden Sie den Button ![neu todo anlegen](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/delete_all_add_new_task.png), wenn Sie auf Button drücken, leitet es sich Ihnen zu `Neu Todo` Seite weitergeleitet. ![neuentodoanlegen](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/neuenTodo.png)
  2. Wenn Sie alle Information angegeben haben, drücken sie auf `Add` oder können Sie den Button `Zurück`  nutzen um zur vorherigen Seite zurückzukommen.
  3. Sie müssen Titel angeben um  den Task hinzuzufügen. Andere Informationen müssen sie nicht angeben.
 
@@ -42,7 +42,7 @@ Nachdem Sie sich angemeldet haben, können Sie eine neue To-Do-Liste erstellen, 
 
 Sie können vorhandene Aufgaben aktualisieren, indem Sie sie bearbeiten und Änderungen vornehmen.
 
-1. So sehen Sie `Dashboard` aus ![dashboard](), Sie können auf einen Task drücken, werden Sie zum  Bearbeitungsseite geleitet.
+1. So sehen Sie `Dashboard` aus ![dashboard](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/dashboard_with_task.png), Sie können auf einen Task drücken, werden Sie zum  Bearbeitungsseite geleitet.![updateTask](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/updatetodo.png)
 2. in der Seite können sie mit dem `Update` Button  den Task bearbeiten oder mit dem `zurück` Button um nach `Dashboard` zurückzugehen.
 3. Sie können auch Task als erledigt markieren, dann wird das Task in `Dashboard`  mit gestrichen dargestellt.
 
@@ -50,13 +50,13 @@ Sie können vorhandene Aufgaben aktualisieren, indem Sie sie bearbeiten und Änd
 
 Einzelne Aufgaben können gelöscht werden, oder Sie haben die Möglichkeit, alle Aufgaben auf einmal zu löschen.
 
-1. Sie können jeden Task direkt in `Dashboard`  durch Anklicken des `Delete` Button  löschen.
-2. Sie können auch im `Dashboard`  alle Tasks gleichzeitig löschen, indem Sie den `Delete All` Button nutzen
+1. Sie können jeden Task direkt in `Dashboard`  durch Anklicken des `Delete` Button ![deletebutton](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/delete_task.png)  löschen.
+2. Sie können auch im `Dashboard`  alle Tasks gleichzeitig löschen, indem Sie den `Delete All` Button ![deleteAll]() nutzen
 
 ## To-Do als erledigt markieren
 
 Markieren Sie Ihre Aufgaben als erledigt, um den Fortschritt zu verfolgen.
-  + Um das Task als Erledigt zu markieren, klicken Sie einfach auf das Häkchen neben dem Task.
+  + Um das Task als Erledigt zu markieren, klicken Sie einfach auf das Häkchen neben dem Task. ![checkbox]()
 
 ## Technologien
 
