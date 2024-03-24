@@ -24,11 +24,11 @@ Um die To-Do-Liste zu verwenden, müssen Sie sich zunächst anmelden oder regist
 1. Login
    + Wenn Sie schon einen Account haben, können Sie sich mit Ihren Anmeldeinformationen anmelden(siehe Bilder): ![Anmeldung](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/login.png)
    + Wenn es erfolgreich ist werden Sie zum  Dashboard weitergeleitet.![dashboard](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/dashboard.png)
-   + Falls der Benutzername oder das Passwort falsch sind, wird dies angezeigt.![FehlerAnmeldung]()
+   + Falls der Benutzername oder das Passwort falsch sind, wird dies angezeigt.![FehlerAnmeldung](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/loginFehler.png)
 2. Registrieren
    +  Geben Sie einen Namen, einen Benutzernamen und ein Passwort ein.
    + Klicken Sie auf "Registrieren".
-   + Wenn der Benutzername bereits vergeben ist, wird dies angezeigt.![FehlerRegistrieren]()
+   + Wenn der Benutzername bereits vergeben ist, wird dies angezeigt.![FehlerRegistrieren](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/registrierenFehler.png)
    + Wenn Registration Erfolgreich ist, werden Sie zum `/Login` Seite weitergeleitet.
 
 ## Neue To-Do anlegen
@@ -50,13 +50,13 @@ Sie können vorhandene Aufgaben aktualisieren, indem Sie sie bearbeiten und Änd
 
 Einzelne Aufgaben können gelöscht werden, oder Sie haben die Möglichkeit, alle Aufgaben auf einmal zu löschen.
 
-1. Sie können jeden Task direkt in `Dashboard`  durch Anklicken des `Delete` Button ![deletebutton](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/delete_task.png)  löschen.
-2. Sie können auch im `Dashboard`  alle Tasks gleichzeitig löschen, indem Sie den `Delete All` Button ![deleteAll]() nutzen
+1. Sie können jeden Task direkt in `Dashboard`  durch Anklicken des `Delete` Button ![deletebutton](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/deletebutton.png)  löschen.
+2. Sie können auch im `Dashboard`  alle Tasks gleichzeitig löschen, indem Sie den `Delete All` Button ![deleteAll](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/deleteAllButton.png) nutzen
 
 ## To-Do als erledigt markieren
 
 Markieren Sie Ihre Aufgaben als erledigt, um den Fortschritt zu verfolgen.
-  + Um das Task als Erledigt zu markieren, klicken Sie einfach auf das Häkchen neben dem Task. ![checkbox]()
+  + Um das Task als Erledigt zu markieren, klicken Sie einfach auf das Häkchen neben dem Task. ![checkbox](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/checkboxx.png)
 
 ## Technologien
 
