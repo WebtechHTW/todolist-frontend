@@ -91,7 +91,7 @@ Dieses Projekt verwendet Node.js und Angular für die Implementierung.
 4. Frontend installieren
 + Klonen Sie das  Frontend Repository
    ```
-   git clone git@github.com:WebtechHTW/todolist-backend.git
+   git clone git@github.com:WebtechHTW/todolist-frontend.git
     ```
 + Navigieren Sie zum Frontend-Repository
   ```
