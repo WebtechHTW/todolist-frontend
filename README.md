@@ -42,7 +42,7 @@ Nachdem Sie sich angemeldet haben, können Sie eine neue To-Do-Liste erstellen, 
 
 Sie können vorhandene Aufgaben aktualisieren, indem Sie sie bearbeiten und Änderungen vornehmen.
 
-1. So sehen Sie `Dashboard` aus ![dashboard](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/dashboard_with_task.png), Sie können auf einen Task drücken, werden Sie zum  Bearbeitungsseite geleitet.![updateTask](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/updatetodo.png)
+1. So sehen `Dashboard` aus ![dashboard](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/dashboard_with_task.png), Sie können auf einen Task drücken, werden Sie zum  Bearbeitungsseite geleitet.![updateTask](https://github.com/WebtechHTW/todolist-frontend/blob/main/bilder/updatetodo.png)
 2. in der Seite können sie mit dem `Update` Button  den Task bearbeiten oder mit dem `zurück` Button um nach `Dashboard` zurückzugehen.
 3. Sie können auch Task als erledigt markieren, dann wird das Task in `Dashboard`  mit gestrichen dargestellt.
 
