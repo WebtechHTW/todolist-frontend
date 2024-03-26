@@ -95,7 +95,7 @@ Dieses Projekt verwendet Node.js und Angular für die Implementierung.
     ```
 + Navigieren Sie zum Frontend-Repository
   ```
-  cd todolist-frontend
+  cd todolist-frontend/todolist-frontend
   ```
 + Installieren Sie Abhängigkeiten
   ```
